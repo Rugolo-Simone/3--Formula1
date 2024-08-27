@@ -42,103 +42,34 @@ header{
     color: white;
 }
 
-#sectionMain{
+#sectMain{
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-#cardGara{
+#cardCalendario{
     background-color: white;
-    width: 900px;
+    width: 300px;
     height: 300px;
     margin-top: 40px;
     border-radius: 10px;
     box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
-}
-
-#titleCard{
-    font-weight: bold;
     text-align: center;
+    font-weight: bold;
 }
 
-#divCentraleCard{
-    display: flex;
-}
-
-#tableGara{
-    width: 450px;
+#btn{
+    background-color: #EB211C;
+    border-radius: 5px;
+    height: 30px;
+    width: 100px;
     color: white;
-    background-color: rgb(40, 36, 36);
-    border-radius: 8px;
-    border-collapse: collapse;
+    border: 1px solid white;
 }
 
-.tr{
-    border-bottom: 1px solid white;
-}
-
-#scroll{
-    position: absolute;
-    margin-left: 400px;
-    overflow-y:auto;
-    overflow-x: hidden;
-    max-height: 200px;
-}
-
-#primo{
-    color: yellow;
-}
-
-#secondo{
-    color: grey;
-}
-
-#terzo{
-    color: orange;
-}
-
-#puntiGiroVeloce{
-    color: rgb(226, 3, 226);
-}
-
-.mclaren{
-    color: orange;
-}
-
-.ferrari{
-    color: red;
-}
-
-.redbull{
-    color: blue;
-}
-
-.mercedes{
-    color: aqua;
-}
-
-.alpine{
-    color: deepskyblue;
-}
-
-.aston{
-    color: darkgreen;
-}
-
-.alfa{
-    color:chartreuse;
-}
-
-.haas{
-    color: white;
-}
-
-.alpha{
-    color: darkslateblue;
-}
-
-.williams{
-    color: darkblue;
+#help{
+    font-weight: normal;
+    font-size: 8pt;
 }
