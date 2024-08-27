@@ -1,0 +1,140 @@
+footer{
+    bottom: 0px;
+    width: 100%;
+    background-color: #EB211C;
+    position: absolute;
+    color: white;
+    height: 50px;
+    text-align: center;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    color: white;
+    background-color: #EB211C;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+#navHeader{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 25px;
+}
+
+#titleHeader{
+    font-size: 20pt;
+}
+
+.aN{
+    margin-left: 50px;
+    margin-top: 7px;
+}
+
+#sectionMain{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#cardGara{
+    background-color: white;
+    width: 900px;
+    height: 300px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+#titleCard{
+    font-weight: bold;
+    text-align: center;
+}
+
+#divCentraleCard{
+    display: flex;
+}
+
+#tableGara{
+    width: 450px;
+    color: white;
+    background-color: rgb(40, 36, 36);
+    border-radius: 8px;
+    border-collapse: collapse;
+}
+
+.tr{
+    border-bottom: 1px solid white;
+}
+
+#scroll{
+    position: absolute;
+    margin-left: 400px;
+    overflow-y:auto;
+    overflow-x: hidden;
+    max-height: 200px;
+}
+
+#primo{
+    color: yellow;
+}
+
+#secondo{
+    color: grey;
+}
+
+#terzo{
+    color: orange;
+}
+
+#puntiGiroVeloce{
+    color: rgb(226, 3, 226);
+}
+
+.mclaren{
+    color: orange;
+}
+
+.ferrari{
+    color: red;
+}
+
+.redbull{
+    color: blue;
+}
+
+.mercedes{
+    color: aqua;
+}
+
+.alpine{
+    color: deepskyblue;
+}
+
+.aston{
+    color: darkgreen;
+}
+
+.alfa{
+    color:chartreuse;
+}
+
+.haas{
+    color: white;
+}
+
+.alpha{
+    color: darkslateblue;
+}
+
+.williams{
+    color: darkblue;
+}
