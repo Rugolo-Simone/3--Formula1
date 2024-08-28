@@ -1,0 +1,117 @@
+footer{
+    bottom: 0px;
+    width: 100%;
+    background-color: #EB211C;
+    position: absolute;
+    color: white;
+    height: 50px;
+    text-align: center;
+}
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    color: white;
+    background-color: #EB211C;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+#navHeader{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin-left: 25px;
+}
+
+#titleHeader{
+    font-size: 20pt;
+    text-decoration: none;
+    color: white;
+}
+
+.aN{
+    margin-left: 50px;
+    margin-top: 7px;
+    text-decoration: none;
+    color: white;
+}
+
+#fieldInfo{
+    width: 300px;
+    height: 80px;
+}
+
+#sectMain{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+#cardCerca{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#cardInfo{
+    background-color: white;
+    width: 700px;
+    height: 300px;
+    position: relative;
+    margin-top: -25px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+}
+
+#select{
+    width: 250px;
+}
+
+.titleInfo{
+    text-align: center;
+    font-weight: bold;
+}
+
+#titleI{
+    text-align: center;
+    font-weight: bold;
+}
+
+#divImg{
+    display: flex;
+    flex-direction: column;
+    width: 210px;
+    align-items: center;
+}
+
+#sectInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#divDescrizione{
+    width: 200px;
+}
+
+.divText{
+    font-size: 10pt;
+}
+
+#divClassifica{
+    width: 200px;
+}

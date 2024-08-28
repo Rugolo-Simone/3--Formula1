@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/Scopri.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="js/Scopri.js"></script>
+    <title>Scopri</title>
+</head>
+<body>
+    <header>
+        <nav id="navHeader">
+            <a id="titleHeader" href="#">Scopri</a>
+            <a class="aN" href="Index.html">Home</a>
+            <a class="aN">Calendario</a>
+        </nav>
+    </header>
+    <main>
+        <div id="info">
+            <fieldset id="fieldInfo">
+                <legend>INFO</legend>
+                <p id="fieldText"><span class="material-symbols-outlined">info</span>In questa pagina potrai visualizzare le informazioni dei vari team e/o piloti.
+            </fieldset>
+        </div>
+        <section id="sectMain">
+            <div id="cardCerca">
+                CERCA PILOTI/TEAM
+                <select title="CERCA" id="select"></select>
+                <button id="btn" onclick="conferma()">CONFERMA</button>
+            </div>
+            <div id="cardInfo">
+                <p id="titleI">SELEZIONA UN TEAM</p>
+                <section id="sectInfo">
+                    <div id="divImg">
+                        <img width="200px" id="imgTeam">
+                        <div id="imgPiloti">
+                            <img width="100" id="imgP1">
+                            <img width="100px" id="imgP2">
+                        </div>
+                    </div>
+                    <div id="divDescrizione">
+                        <p class="titleInfo">DESCRIZIONE</p>
+                        <div class="divText">
+                            <p id="txtDesc"></p>
+                        </div>
+                    </div>
+                    <div id="divClassifica">
+                        <p class="titleInfo">CAMPIONATO</p>
+                        <div class="divText">
+                            <p id="txtCamp"></p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div></div>
+        </section>
+    </main>
+    <footer>
+        © 2024 Rugolo Simone - Tutti i diritti sono riservati
+    </footer>
+</body>
+</html>
