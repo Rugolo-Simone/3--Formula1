@@ -1,161 +1,332 @@
+window.onload = init
+
 var piloti = [
     {
-        "Nome": "Max Verstappen",
-        "Numero": "1",
-        "Team": "Red Bull Racing"
+        "Posizione": "11°",
+        "Pilota": "Nico Hulkenberg",
+        "Podi": "0",
+        "Vittorie": "0",
+        "Punti": "22"
     },
     {
-        "Nome": "Sergio Perez",
-        "Numero": "11",
-        "Team": "Red Bull Racing"
+        "Posizione": "7°",
+        "Pilota": "Sergio Perez",
+        "Podi": "3",
+        "Vittorie": "1",
+        "Punti": "139"
     },
     {
-        "Nome": "Charles Leclerc",
-        "Numero": "16",
-        "Team": "Ferrari"
+        "Posizione": "20°",
+        "Pilota": "Logan Sargeant",
+        "Podi": "0",
+        "Vittorie": "0",
+        "Punti": "0"
     },
     {
-        "Nome": "Carlos Sainz",
-        "Numero": "55",
-        "Team": "Ferrari"
+        "Posizione": "5°",
+        "Pilota": "Carlos Sainz",
+        "Podi": "6",
+        "Vittorie": "1",
+        "Punti": "172"
     },
     {
-        "Nome": "Lewis Hamilton",
-        "Numero": "44",
-        "Team": "Mercedes"
+        "Posizione": "2°",
+        "Pilota": "Lando Norris",
+        "Podi": "10",
+        "Vittorie": "4",
+        "Punti": "225"
     },
     {
-        "Nome": "George Russell",
-        "Numero": "63",
-        "Team": "Mercedes"
+        "Posizione": "9°",
+        "Pilota": "Fernando Alonso",
+        "Podi": "1",
+        "Vittorie": "0",
+        "Punti": "50"
     },
     {
-        "Nome": "Fernando Alonso",
-        "Numero": "14",
-        "Team": "Aston Martin"
+        "Posizione": "12°",
+        "Pilota": "Yuki Tsunoda",
+        "Podi": "0",
+        "Vittorie": "0",
+        "Punti": "22"
     },
     {
-        "Nome": "Lance Stroll",
-        "Numero": "18",
-        "Team": "Aston Martin"
+        "Posizione": "13°",
+        "Pilota": "Daniel Ricciardo",
+        "Podi": "0",
+        "Vittorie": "0",
+        "Punti": "12"
     },
     {
-        "Nome": "Lando Norris",
-        "Numero": "4",
-        "Team": "McLaren"
+        "Posizione": "6°",
+        "Pilota": "Lewis Hamilton",
+        "Podi": "5",
+        "Vittorie": "1",
+        "Punti": "154"
     },
     {
-        "Nome": "Oscar Piastri",
-        "Numero": "81",
-        "Team": "McLaren"
+        "Posizione": "18°",
+        "Pilota": "Alexander Albon",
+        "Podi": "0",
+        "Vittorie": "0",
+        "Punti": "4"
     },
     {
-        "Nome": "Esteban Ocon",
-        "Numero": "31",
-        "Team": "Alpine"
+        "Posizione": "10°",
+        "Pilota": "Lance Stroll",
+        "Podi": "0",
+        "Vittorie": "0",
+        "Punti": "24"
     },
     {
-        "Nome": "Pierre Gasly",
-        "Numero": "10",
-        "Team": "Alpine"
+        "Posizione": "15°",
+        "Pilota": "Oliver Bearman",
+        "Podi": "0",
+        "Vittorie": "0",
+        "Punti": "6"
     },
     {
-        "Nome": "Valtteri Bottas",
-        "Numero": "77",
-        "Team": "Alfa Romeo"
+        "Posizione": "4°",
+        "Pilota": "Oscar Piastri",
+        "Podi": "7",
+        "Vittorie": "1",
+        "Punti": "179"
     },
     {
-        "Nome": "Zhou Guanyu",
-        "Numero": "24",
-        "Team": "Alfa Romeo"
+        "Posizione": "1°",
+        "Pilota": "Max Verstappen",
+        "Podi": "12",
+        "Vittorie": "8",
+        "Punti": "295"
     },
     {
-        "Nome": "Kevin Magnussen",
-        "Numero": "20",
-        "Team": "Haas"
+        "Posizione": "14°",
+        "Pilota": "Pierre Gasly",
+        "Podi": "0",
+        "Vittorie": "0",
+        "Punti": "8"
     },
     {
-        "Nome": "Nico Hulkenberg",
-        "Numero": "27",
-        "Team": "Haas"
+        "Posizione": "3°",
+        "Pilota": "Charles Leclerc",
+        "Podi": "8",
+        "Vittorie": "2",
+        "Punti": "192"
     },
     {
-        "Nome": "Yuki Tsunoda",
-        "Numero": "22",
-        "Team": "AlphaTauri"
+        "Posizione": "16°",
+        "Pilota": "Kevin Magnussen",
+        "Podi": "0",
+        "Vittorie": "0",
+        "Punti": "5"
     },
     {
-        "Nome": "Daniel Ricciardo",
-        "Numero": "3",
-        "Team": "AlphaTauri"
+        "Posizione": "8°",
+        "Pilota": "George Russell",
+        "Podi": "2",
+        "Vittorie": "0",
+        "Punti": "122"
     },
     {
-        "Nome": "Alexander Albon",
-        "Numero": "23",
-        "Team": "Williams"
+        "Posizione": "19°",
+        "Pilota": "Zhou Guanyu",
+        "Podi": "0",
+        "Vittorie": "0",
+        "Punti": "0"
     },
     {
-        "Nome": "Logan Sargeant",
-        "Numero": "2",
-        "Team": "Williams"
+        "Posizione": "17°",
+        "Pilota": "Esteban Ocon",
+        "Podi": "0",
+        "Vittorie": "0",
+        "Punti": "5"
     }
-]
+];
 
 var team = [
     {
-        "Nome": "Scuderia Ferrari",
-        "Vittorie": 2,
-        "Paese": "Italia"
+        "Team": "Alfa Romeo",
+        "Podi": "0",
+        "Vittorie": "0",
+        "Punti": "0"
     },
     {
-        "Nome": "Red Bull Racing",
-        "Vittorie": 7,
-        "Paese": "Austria"
+        "Team": "Williams",
+        "Podi": "0",
+        "Vittorie": "0",
+        "Punti": "4"
     },
     {
-        "Nome": "Mercedes",
-        "Vittorie": 3,
-        "Paese": "Germania"
+        "Team": "Aston Martin",
+        "Podi": "3",
+        "Vittorie": "0",
+        "Punti": "74"
     },
     {
-        "Nome": "McLaren",
-        "Vittorie": 3,
-        "Paese": "Gran Bretagna"
+        "Team": "Alpine",
+        "Podi": "1",
+        "Vittorie": "0",
+        "Punti": "13"
     },
     {
-        "Nome": "Aston Martin",
-        "Vittorie": 0,
-        "Paese": "Gran Bretagna"
+        "Team": "McLaren",
+        "Podi": "10",
+        "Vittorie": "5",
+        "Punti": "404"
     },
     {
-        "Nome": "Alpine",
-        "Vittorie": 0,
-        "Paese": "Francia"
+        "Team": "Red Bull Racing",
+        "Podi": "12",
+        "Vittorie": "8",
+        "Punti": "434"
     },
     {
-        "Nome": "Alfa Romeo",
-        "Vittorie": 0,
-        "Paese": "Svizzera"
+        "Team": "Haas",
+        "Podi": "1",
+        "Vittorie": "0",
+        "Punti": "27"
     },
     {
-        "Nome": "Haas",
-        "Vittorie": 0,
-        "Paese": "Stati Uniti"
+        "Team": "Alpha Tauri",
+        "Podi": "2",
+        "Vittorie": "0",
+        "Punti": "34"
     },
     {
-        "Nome": "AlphaTauri",
-        "Vittorie": 0,
-        "Paese": "Italia"
+        "Team": "Ferrari",
+        "Podi": "6",
+        "Vittorie": "2",
+        "Punti": "370"
     },
     {
-        "Nome": "Williams",
-        "Vittorie": 0,
-        "Paese": "Gran Bretagna"
+        "Team": "Mercedes",
+        "Podi": "5",
+        "Vittorie": "2",
+        "Punti": "276"
     }
-]
-
-window.onload = init
+];
 
 function init(){
-    
+    creaTabella()
+}
+
+function creaTabella() {
+    let sectTabella = document.getElementById("table1");
+
+    let cancellaTable = sectTabella.querySelector("table");
+    if (cancellaTable) {
+        sectTabella.removeChild(cancellaTable);
+    }
+
+    let tb = document.createElement("table");
+    tb.className = "tablePil";
+
+    let tr = document.createElement("tr");
+    tr.className = "tr";
+
+    let th1 = document.createElement("th");
+    th1.innerHTML = "POSIZIONE";
+    tr.appendChild(th1);
+
+    let th2 = document.createElement("th");
+    th2.innerHTML = "PILOTA";
+    tr.appendChild(th2);
+
+    let th3 = document.createElement("th");
+    th3.innerHTML = "PODI";
+    tr.appendChild(th3);
+
+    let th4 = document.createElement("th");
+    th4.innerHTML = "VITTORIE";
+    tr.appendChild(th4);
+
+    let th5 = document.createElement("th");
+    th5.innerHTML = "PUNTI";
+    tr.appendChild(th5);
+
+    tb.appendChild(tr);
+
+    for (let i = 0; i < piloti.length; i++) {
+        let tr0 = document.createElement("tr");
+        let td0 = document.createElement("td");
+        td0.innerHTML = piloti[i].Posizione;
+        tr0.appendChild(td0);
+        
+        let td1 = document.createElement("td");
+        td1.innerHTML = piloti[i].Pilota;
+        tr0.appendChild(td1);
+        
+        let td2 = document.createElement("td");
+        td2.innerHTML = piloti[i].Podi;
+        tr0.appendChild(td2);
+        
+        let td3 = document.createElement("td");
+        td3.innerHTML = piloti[i].Vittorie;
+        tr0.appendChild(td3);
+        
+        let td4 = document.createElement("td");
+        td4.innerHTML = piloti[i].Punti;
+        tr0.appendChild(td4);
+        
+        tb.appendChild(tr0);
+    }
+
+    sectTabella.appendChild(tb);
+
+    let sectTabella2 = document.getElementById("table2");
+
+    let cancellaTable2 = sectTabella2.querySelector("table");
+    if (cancellaTable2) {
+        sectTabella2.removeChild(cancellaTable2);
+    }
+
+    let tb2 = document.createElement("table");
+    tb2.className = "tableTea";
+
+    let tr2 = document.createElement("tr");
+    tr2.className = "tr";
+
+    let th6 = document.createElement("th");
+    th6.innerHTML = "TEAM";
+    tr2.appendChild(th6);
+
+    let th7 = document.createElement("th");
+    th7.innerHTML = "PODI";
+    tr2.appendChild(th7);
+
+    let th8 = document.createElement("th");
+    th8.innerHTML = "VITTORIE";
+    tr2.appendChild(th8);
+
+    let th9 = document.createElement("th");
+    th9.innerHTML = "PUNTI";
+    tr2.appendChild(th9);
+
+    tb2.appendChild(tr2);
+
+    for (let i = 0; i < team.length; i++) {
+        let tr1 = document.createElement("tr");
+        let td1 = document.createElement("td");
+        td1.innerHTML = team[i].Team;
+        tr1.appendChild(td1);
+        
+        let td2 = document.createElement("td");
+        td2.innerHTML = team[i].Podi;
+        tr1.appendChild(td2);
+        
+        let td3 = document.createElement("td");
+        td3.innerHTML = team[i].Vittorie;
+        tr1.appendChild(td3);
+        
+        let td4 = document.createElement("td");
+        td4.innerHTML = team[i].Punti;
+        tr1.appendChild(td4);
+        
+        tb2.appendChild(tr1);
+    }
+    sectTabella2.appendChild(tb2);
+}
+
+function ordinaPunti(){
+    creaTabella()
 }

@@ -2,10 +2,11 @@ footer{
     bottom: 0px;
     width: 100%;
     background-color: #EB211C;
-    position: absolute;
+    position: relative;
     color: white;
     height: 50px;
     text-align: center;
+    margin-top: 30px;
 }
 
 body{
@@ -43,10 +44,9 @@ header{
 }
 
 #sectionMain{
-    width: 100%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 #cardGara{
@@ -70,7 +70,7 @@ header{
 #tableGara{
     width: 450px;
     color: white;
-    background-color: rgb(40, 36, 36);
+    background-color: rgb(56, 56, 56);
     border-radius: 8px;
     border-collapse: collapse;
 }
@@ -141,4 +141,51 @@ header{
 
 .williams{
     color: darkblue;
+}
+
+#cardClassifica{
+    background-color: rgb(56, 56, 56);
+    width: 1300px;
+    height: 650px;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px 5px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+#divBtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.btn{
+    width: 150px;
+    border-radius: 5px;
+    height: 30px;
+    background-color: white;
+}
+
+#divTableCl{
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.tablePil{
+    width: 450px;
+    color: white;
+    background-color: rgb(56, 56, 56);
+    border-radius: 8px;
+    border-collapse: collapse;
+}
+
+.tableTea{
+    width: 450px;
+    color: white;
+    background-color: rgb(56, 56, 56);
+    border-radius: 8px;
+    border-collapse: collapse;
 }
