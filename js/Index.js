@@ -16,7 +16,7 @@ var piloti = [
         "Punti": "139"
     },
     {
-        "Posizione": "20°",
+        "Posizione": "19°",
         "Pilota": "Logan Sargeant",
         "Podi": "0",
         "Vittorie": "0",
@@ -128,7 +128,7 @@ var piloti = [
         "Punti": "122"
     },
     {
-        "Posizione": "19°",
+        "Posizione": "20°",
         "Pilota": "Zhou Guanyu",
         "Podi": "0",
         "Vittorie": "0",
@@ -328,5 +328,26 @@ function creaTabella() {
 }
 
 function ordinaPunti(){
+    
+    for (let i = 0; i < piloti.length - 1; i++) {
+        for (let j = 0; j < piloti.length - 1 - i; j++) {
+            if (parseInt(piloti[j].Punti) < parseInt(piloti[j + 1].Punti)) {
+                let temp = piloti[j];
+                piloti[j] = piloti[j + 1];
+                piloti[j + 1] = temp;
+            }
+        }
+    }
+
+    for (let i = 0; i < team.length - 1; i++) {
+        for (let j = 0; j < team.length - 1 - i; j++) {
+            if (parseInt(team[j].Punti) < parseInt(team[j + 1].Punti)) {
+                let temp = team[j];
+                team[j] = team[j + 1];
+                team[j + 1] = temp;
+            }
+        }
+    }
+
     creaTabella()
 }

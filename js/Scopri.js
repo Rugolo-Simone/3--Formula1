@@ -56,7 +56,7 @@ var vettore = [
         "imgTeam": "img/alpine.png",
         "imgP1": "img/ocon.png",
         "imgP2": "img/gasly.png",
-        "desc": "Alpine è una scuderia nuova in F1, francese, ex Renault con alla guida due piloti entrambi francesi, Esteban Ocon e pier Gasly",
+        "desc": "Alpine è una scuderia nuova in F1, francese, ex Renault con alla guida due piloti entrambi francesi, Esteban Ocon e Pierre Gasly",
         "camp": "In Campionato si trova al ottavo posto con 13 punti e 0 vittorie",
         "backColor": "deepskyblue",
         "color": "black"
